@@ -1,20 +1,9 @@
-# "Node JS Tutorial Series - MongoDB with Mongoose: Async CRUD"
-
-✅ [Check out my YouTube Channel with all of my tutorials](https://www.youtube.com/DaveGrayTeachesCode).
-
-[<img src="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix-button.svg" width="163px" />](https://glitch.com/edit/#!/import/github/gitdagray/mongo_async_crud)
+# "Node JS - MongoDB with Mongoose and JWT: Async CRUD"
 
 **Deploy by clicking the button above**
 _Remember to add your .env variables in the deployed version_
 
 **Description:**
 
-This repository shares the code applied during the Youtube tutorial. The tutorial is part of a [Node.js & Express for Beginners Playlist](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PFkIxaJ6Xx_X46avTM1aYw) on my channel.  
-
-[YouTube Tutorial](https://youtu.be/AWlLhRQJvtw) for this repository.
-
-I suggest completing my [8 hour JavaScript course tutorial video](https://youtu.be/EfAl9bwzVZk) if you are new to Javascript.
-
-### Academic Honesty
-
-**DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiargism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
+This repository shares the code that I created while learning Node JS MongoDB and JWT, this code have user Authentication and user roles based Authorization (USER, EDITOR, ADMIN). The user can access specific routes and can't access Admin or editor routes, this worked using access token and using React-Router-Dom V6, if there data request to the APi the server will check the user roles and if the user roles can access the data the server will reply with a json object contains it, if not the user will get no users to display UNAUTHORIZED, the refresh token is stored inside HTTP only cookie which the hacker can't access it using JS.
+When the application is running the main page will be public for all users which have links to go if user request admin editor or user page he will be redirected to Login page, if the user auth is true he can access the requested pages based on his roles which is the second security measure, the third and final security measure is when requesting or sending data to the server which the server will check the user roles and respond.
